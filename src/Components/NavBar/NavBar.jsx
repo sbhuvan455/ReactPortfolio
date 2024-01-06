@@ -27,7 +27,7 @@ function NavBar() {
 
   return (
     <>
-    <div className='bg-gray-50 w-full h-16 shadow-md flex items-center justify-between select-none'>
+    <div className='bg-gray-50 w-full h-16 shadow-md flex items-center justify-between select-none fixed top-0 z-10'>
         <div className='text-2xl text-gray-800 font-semibold mx-5'>
             Bhuvan.
         </div>
@@ -38,10 +38,10 @@ function NavBar() {
             })}
         </div>
 
-        {(nav)?<RxCross1 size={30} onClick={()=>setNav(!nav)} className='mx-7 cursor-pointer md:hidden'/>:<FaBars size={30} onClick={()=>setNav(!nav)} className='mx-7 cursor-pointer md:hidden'/>}
+        {(nav)?<RxCross1 size={30} onClick={()=>setNav(!nav)} className='mx-7 cursor-pointer z-10 md:hidden'/>:<FaBars size={30} onClick={()=>setNav(!nav)} className='mx-7 cursor-pointer z-10 md:hidden'/>}
     </div>
 
-    {(nav)&&(<div className='flex flex-col justify-center items-center h-screen w-screen fixed md:hidden'>
+    {(nav)&&(<div className='flex flex-col justify-center items-center h-screen w-screen fixed bg-slate-300 md:hidden'>
             {Links.map(({ id, link }) => {
                 return <a key={id}  href="/" className='font-medium duration-200 hover:bg-slate-200 p-2 rounded-md'>{link}</a>
             })}
