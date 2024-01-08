@@ -1,7 +1,12 @@
 import React, {useEffect, useState} from 'react'
 import { FaBars } from "react-icons/fa6";
 import { RxCross1 } from "react-icons/rx";
-import { useDispatch } from 'react-redux';
+import { FcBusinessman } from "react-icons/fc";
+import { GrContact } from "react-icons/gr";
+import { PiWechatLogo } from "react-icons/pi";
+
+
+
 
 function NavBar() {
 
@@ -11,19 +16,28 @@ function NavBar() {
     const Links = [
         {
             id: 1,
-            link: 'Home' 
+            link: 'Home',
+            icons: '🏠'
         },
         {
             id: 2,
-            link: 'About' 
+            link: 'About',
+            icons: <FcBusinessman size={30} />
         },
         {
             id: 3,
-            link: 'Project' 
+            link: 'Education',
+            icons: '🎓'
         },
         {
             id: 4,
-            link: 'Contact' 
+            link: 'Project',
+            icons: '💼' 
+        },
+        {
+            id: 5,
+            link: 'Contact',
+            icons: <PiWechatLogo />
         },
     ]
 
@@ -60,10 +74,13 @@ function NavBar() {
         </div>
     </div>
 
-    {(nav)&&(<div className='flex flex-col justify-center items-center h-screen w-screen fixed bg-slate-300 md:hidden'>
-            {Links.map(({ id, link }) => {
-                return <a key={id}  href="/" className='font-medium duration-200 hover:bg-slate-200 p-2 rounded-md'>{link}</a>
+    {(nav)&&(<div className='flex flex-col items-center h-3/4 w-10 pt-7 rounded-2xl fixed top-28 right-6 bg-gray-200 md:hidden'>
+            {Links.map(({ id, icons }) => {
+                return <a key={id}  href="/" className='font-medium duration-200 p-2 rounded-md my-2 text-3xl'>{icons}</a>
             })}
+            <div onClick={handleThemeChange} className='block p-2 cursor-pointer mx-2 rounded-md duration-200 text-3xl'>
+                {(Theme === "light" ? "🌙" : "☀️")}
+            </div>
     </div>)}
     </>
   )
