@@ -1,10 +1,11 @@
 import React, {useEffect, useState} from 'react'
 import { FaBars } from "react-icons/fa6";
 import { RxCross1 } from "react-icons/rx";
-import { FcBusinessman } from "react-icons/fc";
-import { GrContact } from "react-icons/gr";
+import { CgProfile } from "react-icons/cg";
 import { PiWechatLogo } from "react-icons/pi";
-
+import { IoHomeOutline } from "react-icons/io5";
+import { FaGraduationCap } from "react-icons/fa6";
+import { IoBagCheckSharp } from "react-icons/io5";
 
 
 
@@ -17,22 +18,22 @@ function NavBar() {
         {
             id: 1,
             link: 'Home',
-            icons: '🏠'
+            icons: <IoHomeOutline size={30}/>
         },
         {
             id: 2,
             link: 'About',
-            icons: <FcBusinessman size={30} />
+            icons: <CgProfile size={30} />
         },
         {
             id: 3,
             link: 'Education',
-            icons: '🎓'
+            icons: <FaGraduationCap size={30} />
         },
         {
             id: 4,
             link: 'Project',
-            icons: '💼' 
+            icons: <IoBagCheckSharp size={30} /> 
         },
         {
             id: 5,
@@ -74,7 +75,7 @@ function NavBar() {
         </div>
     </div>
 
-    {(nav)&&(<div className='flex flex-col items-center h-3/4 w-10 pt-7 rounded-2xl fixed top-28 right-6 bg-gray-200 md:hidden'>
+    {(nav)&&(<div className='flex flex-col items-center h-auto  pt-7 rounded-2xl fixed top-28 right-6 bg-gray-200 md:hidden'>
             {Links.map(({ id, icons }) => {
                 return <a key={id}  href="/" className='font-medium duration-200 p-2 rounded-md my-2 text-3xl'>{icons}</a>
             })}
