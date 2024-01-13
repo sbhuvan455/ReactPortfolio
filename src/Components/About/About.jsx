@@ -22,8 +22,8 @@ function About() {
 
   return (
     <div className="md:w-full h-screen dark:bg-zinc-700">
-      <div className="text-center font-semibold text-xl md:text-3xl md:font-bold dark:text-white">
-        About <span className="text-sky-950 dark:text-blue-950">Me!</span>
+      <div className="text-center font-semibold text-xl md:text-3xl md:font-bold text-purple-500">
+        About Me!
       </div>
       <div className="md:w-full h-3/4 flex flex-col md:flex-row items-center md:justify-around ">
         <div className="hidden w-1/2 h-full md:flex items-center justify-center">
@@ -51,7 +51,7 @@ function About() {
           </p>
           <div className="text-center md:text-left">
           <a
-          href="Resume.pdf"
+          href="mailto:sbhuvan455@gmail.com"
           download={true}
           className="bg-gray-800 m-auto font-sans dark:bg-blue-500 text-center p-3 duration-200 rounded-md font-semibold text-white hover:shadow-slate-600 shadow-xl dark:shadow-none dark:hover:bg-sky-950 "
         >

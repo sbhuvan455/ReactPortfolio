@@ -53,16 +53,16 @@ function Projects() {
     ]
 
   return (
-    <div className='w-full min-h-screen dark:bg-zinc-700 text-white'>
-      <div className='mx-auto text-center py-9'>
-        <h1 className='text-3xl font-bold font-sans'>Projects</h1>
-        <p className='font-thin font-sans py-2 dark:text-cyan-500'>My Recent Works</p>
+    <div className='w-full min-h-screen dark:bg-zinc-700 dark:text-white'>
+      <div className='mx-auto text-center py-1'>
+        <h1 className='text-3xl font-bold font-sans m-3 text-purple-500'>Projects</h1>
+        <p className='font-thin font-sans mb-8 dark:text-slate-200'>My Recent Works</p>
       </div>
       <div className='text-center'>
         <span className={`font-thin px-5 select-none cursor-pointer ${(projects)?'text-red-700':''}`} onClick={() => showProjects(true)}>My Works</span>
         <span className={`font-thin px-5 select-none cursor-pointer ${(projects)?'':'text-red-700'}`} onClick={() => showProjects(false)}>My Contributions</span>
       </div>
-      <div className='md:px-14 m-8 text-center mt-6 grid grid-cols-1 md:grid-cols-3 gap-7 py-9'>
+      <div className='md:px-14 mx-9 text-center mt-3 grid grid-cols-1 md:grid-cols-3 gap-7 py-9'>
 
         {(projects)&&(Project.map((project) => {
             return (

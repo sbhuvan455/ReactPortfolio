@@ -83,8 +83,8 @@ function Skills() {
   return (
     <div className='bg-gray-100 w-full md:h-screen py-4 dark:bg-zinc-800'>
       <div className='text-center py-4'>
-        <h1 className='text-3xl font-bold font-sans text-slate-800 dark:text-slate-200'>Skills</h1>
-        <h2 className='text-lg font-sans text-gray-700 py-1 font-thin dark:text-cyan-700'>My Technical Level</h2>
+        <h1 className='text-3xl font-bold font-sans text-purple-500'>Skills</h1>
+        <h2 className='text-lg font-sans text-gray-700 py-1 font-thin dark:text-slate-200'>My Technical Level</h2>
       </div>
       <div className='flex flex-col justify-between items-center md:justify-center gap-6 w-full h-5/6 md:flex-row'>
         <div className='bg-white md:w-1/3 md:h-4/5 rounded-xl p-6 dark:bg-zinc-700'>
