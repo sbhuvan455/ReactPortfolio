@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import "./Home.css"
 
+
 function Home() {
   return (
     <div className="w-full bg-gray-100 flex flex-col-reverse h-screen md:flex-row mx-auto my-auto items-center justify-center md:justify-around dark:bg-zinc-800">

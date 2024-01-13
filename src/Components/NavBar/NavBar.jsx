@@ -75,7 +75,7 @@ function NavBar() {
         </div>
     </div>
 
-    {(nav)&&(<div className='flex flex-col items-center h-auto  pt-7 rounded-2xl fixed top-28 right-6 bg-gray-200 md:hidden'>
+    {(nav)&&(<div className='flex flex-col items-center h-auto pt-7 rounded-2xl fixed top-28 right-6 bg-white/50 backdrop-blur-[1.5rem] md:hidden'>
             {Links.map(({ id, icons }) => {
                 return <a key={id}  href="/" className='font-medium duration-200 p-2 rounded-md my-2 text-3xl'>{icons}</a>
             })}
