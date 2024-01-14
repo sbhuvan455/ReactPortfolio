@@ -6,7 +6,11 @@ export default {
   ],
   darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'my-profile': "url('./Profile.png')",
+      }
+    },
   },
   plugins: [],
 }

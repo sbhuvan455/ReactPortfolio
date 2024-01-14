@@ -9,7 +9,6 @@
 }
 
 .profile_about{
-  background: url("./Profile.png");
   width: 128px;
   height: 128px;
   background-repeat: no-repeat;
@@ -21,7 +20,6 @@
 }
 
 .profile{
-  background: url("./Profile.png");
   width: 128px;
   height: 128px;
   background-repeat: no-repeat;
@@ -31,7 +29,7 @@
   order: 1;
   justify-self: center;
   animation: profile_animate 4s ease-in-out infinite 1s;
-}
+} 
 
 @keyframes profile_animate {
   0% {
@@ -46,3 +44,4 @@
       border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
 }
+

@@ -46,9 +46,10 @@ function Home() {
           Download Resume
         </a>
       </div>
-      <div className="profile md:h-3/5 md:w-1/4">
-
+      <div className="profile md:h-3/5 md:w-1/4 bg-my-profile">
+        
       </div>
+
     </div>
   );
 }
