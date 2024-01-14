@@ -1,5 +1,4 @@
 import React from "react";
-import "./About.css";
 import { SlBadge } from "react-icons/sl";
 import { IoBagHandleSharp } from "react-icons/io5";
 
