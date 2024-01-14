@@ -2,7 +2,6 @@ import React from "react";
 import "./About.css";
 import { SlBadge } from "react-icons/sl";
 import { IoBagHandleSharp } from "react-icons/io5";
-import { IoIosArrowForward } from "react-icons/io";
 
 function About() {
   const cards = [
@@ -21,8 +20,8 @@ function About() {
   ];
 
   return (
-    <div className="md:w-full h-screen dark:bg-zinc-700">
-      <div className="text-center font-semibold text-xl md:text-3xl md:font-bold text-purple-500">
+    <div name="About" className="md:w-full h-screen dark:bg-zinc-700">
+      <div className="text-center font-semibold text-xl md:text-3xl md:font-bold text-purple-500 pt-5">
         About Me!
       </div>
       <div className="md:w-full h-3/4 flex flex-col md:flex-row items-center md:justify-around ">

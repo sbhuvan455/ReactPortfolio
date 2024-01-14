@@ -81,7 +81,7 @@ function Skills() {
     ]
 
   return (
-    <div className='bg-gray-100 w-full md:h-screen py-4 dark:bg-zinc-800'>
+    <div name='Skills' className='bg-gray-100 w-full md:h-screen py-4 dark:bg-zinc-800'>
       <div className='text-center py-4'>
         <h1 className='text-3xl font-bold font-sans text-purple-500'>Skills</h1>
         <h2 className='text-lg font-sans text-gray-700 py-1 font-thin dark:text-slate-200'>My Technical Level</h2>

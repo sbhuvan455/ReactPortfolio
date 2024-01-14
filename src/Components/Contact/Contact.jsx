@@ -30,7 +30,7 @@ function Contact() {
     ]
 
   return (
-    <div className='w-full min-h-screen dark:bg-zinc-800 pb-8'>
+    <div name='Contact' className='w-full min-h-screen dark:bg-zinc-800 pb-8'>
       <div className='text-center p-5'>
         <h1 className='font-sans font-bold text-2xl text-purple-500'>Contact Me</h1>
         <p className='font-sans font-light dark:text-slate-200'>Get in Touch</p>

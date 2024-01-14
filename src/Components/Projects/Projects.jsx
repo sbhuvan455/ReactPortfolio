@@ -53,7 +53,7 @@ function Projects() {
     ]
 
   return (
-    <div className='w-full min-h-screen dark:bg-zinc-700 dark:text-white'>
+    <div name="Project" className='w-full min-h-screen dark:bg-zinc-700 dark:text-white'>
       <div className='mx-auto text-center py-1'>
         <h1 className='text-3xl font-bold font-sans m-3 text-purple-500'>Projects</h1>
         <p className='font-thin font-sans mb-8 dark:text-slate-200'>My Recent Works</p>

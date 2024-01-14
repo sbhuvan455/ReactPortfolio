@@ -6,6 +6,7 @@ import { PiWechatLogo } from "react-icons/pi";
 import { IoHomeOutline } from "react-icons/io5";
 import { FaGraduationCap } from "react-icons/fa6";
 import { IoBagCheckSharp } from "react-icons/io5";
+import { Link } from 'react-scroll';
 
 
 
@@ -27,7 +28,7 @@ function NavBar() {
         },
         {
             id: 3,
-            link: 'Education',
+            link: 'Skills',
             icons: <FaGraduationCap size={30} />
         },
         {
@@ -63,7 +64,7 @@ function NavBar() {
 
         <div className='hidden md:flex items-center gap-3 cursor-pointer mx-3 text-lg'>
             {Links.map(({ id, link }) => {
-                return <a key={id}  href="/" className='font-medium duration-200 hover:bg-slate-200 p-2 rounded-md dark:hover:bg-slate-800'>{link}</a>
+                return <Link key={id} to={link}  smooth duration={500} offset={-80} className='font-medium duration-200 hover:bg-slate-200 p-2 rounded-md dark:hover:bg-slate-800'>{link}</Link>
             })}
             
         </div>
@@ -76,8 +77,8 @@ function NavBar() {
     </div>
 
     {(nav)&&(<div className='flex flex-col items-center h-auto pt-7 rounded-2xl fixed top-28 right-6 bg-white/50 backdrop-blur-[1.5rem] md:hidden'>
-            {Links.map(({ id, icons }) => {
-                return <a key={id}  href="/" className='font-medium duration-200 p-2 rounded-md my-2 text-3xl'>{icons}</a>
+            {Links.map(({ id, icons, link }) => {
+                return <Link key={id}  to={link} smooth duration={500} offset={-80} className='font-medium duration-200 p-2 rounded-md my-2 text-3xl'>{icons}</Link>
             })}
             <div onClick={handleThemeChange} className='block p-2 cursor-pointer mx-2 rounded-md duration-200 text-3xl'>
                 {(Theme === "light" ? "🌙" : "☀️")}

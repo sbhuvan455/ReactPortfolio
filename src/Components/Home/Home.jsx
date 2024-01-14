@@ -6,7 +6,7 @@ import "./Home.css"
 
 function Home() {
   return (
-    <div className="w-full bg-gray-100 flex flex-col-reverse h-screen md:flex-row mx-auto my-auto items-center justify-center md:justify-around dark:bg-zinc-800">
+    <div name="Home" className="w-full bg-gray-100 flex flex-col-reverse h-screen md:flex-row mx-auto my-auto items-center justify-center md:justify-around dark:bg-zinc-800">
       <div className="flex flex-col justify-center items-center md:items-start w-3/6 dark:text-gray-50 ">
         <h1 className="text-xl mt-5 md:text-xl font-bold">It's me <span>Bhuvan 👋</span></h1>
         <h2 className="text-xl md:text-4xl italic font-semibold text-violet-900 md:tracking-tight md:font-bold dark:text-cyan-700">
