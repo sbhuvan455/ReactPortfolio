@@ -50,13 +50,8 @@ function Home() {
           Download Resume
         </a>
       </div>
-<<<<<<< HEAD
       <div className="profile md:h-3/5 md:w-1/4 overflow-hidden">
-        <img src="./Profile.png" alt=" profile" />
-=======
-      <div className="profile md:h-3/5 md:w-1/4 bg-[url('./Profile.png')]">
-        
->>>>>>> fba20355cf9bc193caa4e1d7e5321780e8a145a2
+        <img src="./Profile.png" alt="profile" />
       </div>
     </div>
   );
