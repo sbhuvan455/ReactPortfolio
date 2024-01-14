@@ -25,7 +25,9 @@ function About() {
       </div>
       <div className="md:w-full h-3/4 flex flex-col md:flex-row items-center md:justify-around ">
         <div className="hidden w-1/2 h-full md:flex items-center justify-center">
-          <div className="profile_about md:h-3/5 md:w-2/4 bg-my-profile"></div>
+          <div className="profile_about md:h-3/5 md:w-2/4 overflow-hidden">
+              <img src="./Profile.png" alt="profile" />
+          </div>
         </div>
         <div className="w-1/2 h-full md:px-24 font-serif">
           <div className="flex flex-col mt-8 md:flex-row gap-5 md:py-8 md:px-14">

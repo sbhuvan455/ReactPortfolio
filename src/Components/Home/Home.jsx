@@ -2,19 +2,23 @@ import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
-
 function Home() {
   return (
-    <div name="Home" className="w-full bg-gray-100 flex flex-col-reverse h-screen md:flex-row mx-auto my-auto items-center justify-center md:justify-around dark:bg-zinc-800">
+    <div
+      name="Home"
+      className="w-full bg-gray-100 flex flex-col-reverse h-screen md:flex-row mx-auto my-auto items-center justify-center md:justify-around dark:bg-zinc-800"
+    >
       <div className="flex flex-col justify-center items-center md:items-start w-3/6 dark:text-gray-50 ">
-        <h1 className="text-xl mt-5 md:text-xl font-bold">It's me <span>Bhuvan 👋</span></h1>
+        <h1 className="text-xl mt-5 md:text-xl font-bold">
+          It's me <span>Bhuvan 👋</span>
+        </h1>
         <h2 className="text-xl md:text-4xl italic font-semibold text-violet-900 md:tracking-tight md:font-bold dark:text-cyan-700">
           Software Developer
         </h2>
         <p className="flex text-xl mt-5 italic">
-          Enthusiastic software developer passionate about Building
-          websites. Eager fresher with a year of web-building expertise, seeking
-          new opportunities.
+          Enthusiastic software developer passionate about Building websites.
+          Eager fresher with a year of web-building expertise, seeking new
+          opportunities.
         </p>
         <div className="flex justify-start my-5 gap-3">
           <a
@@ -46,10 +50,9 @@ function Home() {
           Download Resume
         </a>
       </div>
-      <div className="profile md:h-3/5 md:w-1/4 bg-my-profile">
-        
+      <div className="profile md:h-3/5 md:w-1/4 overflow-hidden">
+        <img src="./Profile.png" alt=" profile" />
       </div>
-
     </div>
   );
 }
