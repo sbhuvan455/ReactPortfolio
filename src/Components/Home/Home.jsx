@@ -52,10 +52,10 @@ function Home() {
       </div>
 
       <div className="profile md:h-3/5 md:w-1/4 overflow-hidden">
-        <img src="./Profile.png" alt=" profile" />
+        <img src="./Profile.png" alt="profile" />
       </div>
 
-      </div>
+    </div>
   );
 }
 
