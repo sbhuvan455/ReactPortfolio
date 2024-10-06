@@ -7,7 +7,7 @@ function About() {
     {
       id: 1,
       topic: "Experience",
-      number: "0 years",
+      number: "2 years",
       icon: <SlBadge size={30} />,
     },
     {

@@ -13,28 +13,22 @@ function Projects() {
         },
         {
             id: 2,
-            title: "YouTube Backend",
-            link: "https://github.com/sbhuvan455/Backend-YouTube",
-            image: "YouTube.png"
+            title: "VidTube",
+            link: "https://github.com/sbhuvan455/VidTube",
+            image: "vidtube.png"
         },
         {
-            id: 3,
-            title: "Real Estate Website",
-            link: "https://github.com/sbhuvan455",
-            image: "RealEstate.png"
+          id: 3,
+          title: "FlashMart",
+          link: "https://github.com/sbhuvan455/FlashMart",
+          image: "flashmart.png"
         },
         {
             id: 4,
-            title: "Movie Ticket Booking",
-            link: "https://github.com/sbhuvan455",
-            image: "movieTicket.png"
+            title: "Real Estate Website",
+            link: "https://github.com/sbhuvan455/Real-estate-app",
+            image: "RealEstate.png"
         },
-        {
-            id: 5,
-            title: "Random Password Generator",
-            link: "https://github.com/sbhuvan455/Random-password-generator",
-            image: "RPG.png"
-        }
     ]
 
     const Contributions = [
